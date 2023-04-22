@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animate.css')}}">
+</head>
+<body>
+    <div class="container1">
+        <nav>
+            <a href="index.html" class="title">Yeah Buddy</a>
+            <ul>
+                <li><a href="#" class="nav-links">Home</a></li>
+                <li><a href="#" class="nav-links">About Us</a></li>
+                <li><a href="#" class="nav-links">Contact Us</a></li>
+                <li><a href="#" class="nav-links">Review</a></li>
+            </ul>
+        </nav>
+        <div class="main-con1">
+            <p class="l1">WELCOME TO</p>
+            <p class="l2">YEAH BUDDY</p>
+            <p class="l3">Lorem ipsum dolor sit amet.</p>
+            <a href="#" id="bmi-but">Click Here to Calculate BMI</a>
+        </div>
+    </div>
+    <div class="container2">
+        <p class="l1">Fitness Ecosystem</p>
+        <p class="l2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <div class="utl1-con2  wow bounceInUp" data-wow-duration="1s">
+            <img src="{{ url_for('static', filename='Images/1.jpg')}}" id="img1">
+            <div class="content1">
+                <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe excepturi mollitia voluptatibus, fugit dolorum.</p>
+                <a href="/BicepCurls" class="but-con2">Click Here</a>
+            </div>
+        </div>
+        <div class="utl2-con2  wow bounceInUp">
+            <div class="content1">
+                <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe excepturi mollitia voluptatibus, fugit dolorum.</p>
+                <a href="/Crunches" class="but-con2">Click Here</a>
+            </div>
+            <img src="{{ url_for('static', filename='Images/2.png')}}" id="img2">
+        </div>
+        <div class="utl1-con2  wow bounceInUp">
+            <img src="{{ url_for('static', filename='Images/1.jpg')}}" id="img1">
+            <div class="content1">
+                <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe excepturi mollitia voluptatibus, fugit dolorum.</p>
+                <a href="/Squats" class="but-con2">Click Here</a>
+            </div>
+        </div>
+        <div class="utl2-con2  wow bounceInUp">
+            <div class="content1">
+                <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe excepturi mollitia voluptatibus, fugit dolorum.</p>
+                <a href="#" class="but-con2">Click Here</a>
+            </div>
+            <img src="{{ url_for('static', filename='Images/2.png')}}" id="img2">
+        </div>
+    </div>
+    <div class="container3">
+        <img src="{{ url_for('static', filename='Images/6.jpg')}}" id="img3">
+        <img src="{{ url_for('static', filename='Images/7.jpg')}}" id="img4">
+        <img src="{{ url_for('static', filename='Images/8.jpg')}}" id="img5">
+        <img src="{{ url_for('static', filename='Images/10.jpg')}}" id="img6">
+        <img src="{{ url_for('static', filename='Images/9.jpg')}}" id="img7">
+        <div class="content-con3">
+            <p class="cl2">Diet Flexibility</p>
+            <p class="cl3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae quaerat sapiente rem natus voluptas ipsa ab non qui nulla autem esse, quas quis et, ex atque dolorem assumenda recusandae.</p>
+            <a href="#" class="but-con3">Get your diet plan now!</a>    
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='wow.min.js')}}"></script>
+<script>
+new WOW().init();
+</script>
+</html>
