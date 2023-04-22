@@ -46,3 +46,16 @@ class poseDetector():
         return angle
 
 
+    # self has been used to make it useful fro the same object of the class possDetector
+    def FindPosition(self,img,draw = True):
+        self.lmList = []   # lmList stores the required information from pose detector module in the from of array
+        if self.results.pose_landmarks:
+            for id,lm in enumerate(self.results.pose_landmarks.landmark):
+                h,w,c = img.shape
+                #print(id , lm)
+                cx, cy = int(lm.x * w), int(lm.y * h) # increasing the accuray by taking float to int so that our data set can be observe and make more accurate
+                self.lmList.append([id, cx, cy])
+                if draw:
+                    cv2.circle(img, (cx, cy), 5, (255, 0, 0), cv2.FILLED)
+            return self.lmList
+
