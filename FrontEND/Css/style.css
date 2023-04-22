@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+.container1{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    min-height: 100px;
+}
+.title{
+    font-size: 30px;
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    right: 370px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+.nav-links:hover{
+	color: orange;
+}
+.nav-links:active{
+    font-size: 18px;
+}
+.main-con1{
+    margin: auto;
+    text-align: center;
+}
+.main-con1 .l1{
+    font-size: 50px;
+    color: white;
+}
+.main-con1 .l2{
+    font-size: 60px;
+    color: orange;
+    font-weight: bold;
+}
+.main-con1 .l3{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+.main-con1 #bmi-but{
+    color: white;
+    text-decoration: none;
+    border: 3px solid rgb(157, 1, 1);
+    padding: 5px;
+    transition: 0.6s;
+}
+.main-con1 #bmi-but:hover{
+    background-color: rgb(157, 1, 1);
+}
+.main-con1 #bmi-but:active{
+    font-size: 14px;
+}
+
+.container2{
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container2 .l1{
+    color: orange;
+    font-size: 30px;
+    margin-top: 100px;
+}
+.container2 .l2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.utl1-con2{
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cl1{
+    color: white;
+    font-size: 23px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+#img1{
+    width: 200px;
+}
+.but-con2{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid rgb(157, 1, 1);
+    padding: 5px;
+    transition: 0.6s;
+}
+.but-con2:hover{
+    background-color: rgb(157, 1, 1);
+}
+.utl2-con2{
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cl1{
+    color: white;
+    font-size: 23px;
+    width: 500px;
+}
+#img2{
+    width: 300px;
+}
+.container3{
+    background-color: rgb(220, 220, 220);
+    min-height: 100vh;
+}
+#img3{
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+#img4{
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+    left: 650px;
+    top: 100px;
+}
+#img5{
+    width: 400px;
+    border-radius: 5px;
+    position: relative;
+    right: 641px;
+    top: 352px;
+}
+#img6{
+    width: 400px;
+    height: 224px;
+    border-radius: 5px;
+    position: relative;
+    left: 587px;
+    top: 112px;
+}
+#img7{
+    width: 400px;
+    height: 224px;
+    border-radius: 5px;
+    position: relative;
+    left: 587px;
+    top: 112px;
+}
+.content-con3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 410px;
+    left: 525px;
+    width: 520px;
+}
+.cl2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cl3{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.but-con3{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid rgb(157, 1, 1);
+    padding: 5px;
+    transition: 0.6s;
+}
+.but-con3:hover{
+    background-color: rgb(157, 1, 1);
+    color: white;
+}
