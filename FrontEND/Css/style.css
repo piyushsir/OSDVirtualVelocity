@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
     background-color: black;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Pathway Extreme', sans-serif;
 }
 .container1{
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("Images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -51,20 +54,25 @@ nav ul{
     font-size: 18px;
 }
 .main-con1{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 234.7px 460.3px;
     text-align: center;
+    align-items: center;
 }
 .main-con1 .l1{
-    font-size: 50px;
+    font-size: 55px;
     color: white;
+    height: 48px;
 }
 .main-con1 .l2{
-    font-size: 60px;
+    font-size: 100px;
     color: orange;
     font-weight: bold;
+    height: 120px;
 }
 .main-con1 .l3{
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     margin-bottom: 15px;
 }
@@ -74,12 +82,64 @@ nav ul{
     border: 3px solid rgb(157, 1, 1);
     padding: 5px;
     transition: 0.6s;
+    font-size: 20px;
+    width: 10vw;
+    border-radius: 10px;
 }
 .main-con1 #bmi-but:hover{
     background-color: rgb(157, 1, 1);
 }
 .main-con1 #bmi-but:active{
     font-size: 14px;
+}
+.bmi form{
+    background-color: rgba(255, 166, 0, 0.8);
+    margin-top: 15px;
+    height: 20vh;
+    width: 20vw;
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.bmi .dims{
+    display: flex;
+}
+.bmi #cm{
+    position: relative;
+    bottom: 25px;
+    left: 10px;
+    font-weight: bold;
+}
+.bmi #kg{
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    font-weight: bold;
+}
+.bmi p{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+#hght{
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+#wght{
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .container2{
