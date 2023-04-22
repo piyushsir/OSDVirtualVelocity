@@ -1,0 +1,7 @@
+
+You : hello how are you? 
+Cbum : I'm doing well, thank you for asking. How about you?
+You : who is tushar sharma? 
+Cbum : I'm not sure who that is.
+You : can we win this hackathon? 
+Cbum : There's no telling who will win the hackathon, but I'm sure you'll do your best!
