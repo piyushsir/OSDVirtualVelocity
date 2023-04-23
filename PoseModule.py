@@ -13,6 +13,8 @@ class poseDetector():
         self.mpPose = mp.solutions.pose
         self.pose = self.mpPose.Pose(self.mode)
 
+        self.tipIds = [15, 16, 3, 6, 27] # taking pose detection points's id of left wrist , right wrist ,left eye , right eye
+                                          # and feet respectively
     def findPose(self, img, draw=True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.pose.process(imgRGB)
@@ -58,6 +60,30 @@ class poseDetector():
                 if draw:
                     cv2.circle(img, (cx, cy), 5, (255, 0, 0), cv2.FILLED)
         return self.lmList
+
+    def HandsUp(self):
+        Hands = []
+        for id in range(0, 2):  # looping for left and right ams both
+            if self.lmList[self.tipIds[id]][2] < self.lmList[self.tipIds[2]][2]: #checking the z axix of wrist and z axis of eyes
+                Hands.append(1)                 # then comparing them to get the result
+            else:                            # 1 for high and 0 for low
+                Hands.append(0)
+
+
+        return Hands  # storing which hand is up in Hands array
+    def HandsDown(self):
+        HandsD = []
+        for id in range(0, 2):
+            if self.lmList[self.tipIds[id]][2] > self.lmList[self.tipIds[4]][2]: #checking the z axiz of wrist and z axiz of
+                HandsD.append(1)                                           #feets and the comparing
+            else:
+                HandsD.append(0)               # 1 for high and 0 for low
+
+
+        return HandsD   #contains the result which hand is high or low in array
+
+
+
 
 
 
