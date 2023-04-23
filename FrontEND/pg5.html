@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Stretching</h1>
+        <div class="cam">
+            <img src="{{ url_for('strch') }}" id="vid-1">
+            <img src="{{ url_for('static', filename='Images/stretch.gif')}}" class="curls-gif">
+        </div> 
+        <form action="{{ url_for('killCam') }}" class="form-1">
+            <input type="submit" name="stop" value="BACK" class="goHome">
+        </form>
+    </div>
+</body>
+</html>
