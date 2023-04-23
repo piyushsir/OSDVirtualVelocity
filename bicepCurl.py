@@ -15,6 +15,8 @@ def main():
     pTime = 0 # present time required for reducing the frame rate per second for more accuracy
     while True:
         success,img = cap.read() # reading the processed image
+
+        img = cv2.flip(img, 1) #flipping the mirror image of camera
         img = cv2.resize(img,(1280,720))
         img = detector.findPose(img,False)
         lmList =  detector.FindPosition(img,False) # draw = false

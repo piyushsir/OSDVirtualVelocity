@@ -15,6 +15,8 @@ def main():
     pTime = 0
     while True:
         success, img = cap.read()
+
+        img = cv2.flip(img, 1) #flipping the mirror image of camera
         img = cv2.resize(img, (1280, 720))
         img = detector.findPose(img, False)
         lmList = detector.FindPosition(img, False)
