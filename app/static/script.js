@@ -1,5 +1,9 @@
 var clk = 0;
 var clk2 = 0;
+if(window.location.href == "http://127.0.0.1:5000/VcStart"){
+    window.location.href = "http://127.0.0.1:5000/";
+    console.log(1);
+}
 function calcBmi(){
     console.log("Hello")
     var ele = document.getElementById("BMI-calc")

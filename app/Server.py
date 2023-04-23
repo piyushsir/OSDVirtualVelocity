@@ -4,7 +4,6 @@ import Squats as sq
 import crun as cr
 import stch as st
 from fldr.yeahBuddy import MainExe
-import os
 app = Flask(__name__)
 
 @app.route('/')
@@ -32,6 +31,9 @@ def strch():
 def voice():
     return Response(MainExe())
 
+@app.route('/vcStart')
+def vcStart():
+    return render_template('index.html')
 
 @app.route('/Stretching')
 def Stretching():
@@ -53,6 +55,11 @@ def Squats():
 @app.route('/requests', methods=['POST', 'GET'])
 def killCam():
     return render_template("index.html")
+
+@app.route('/requests', methods=['POST', 'GET'])
+def killVoice():
+    return render_template("index.html")
+
 
 if __name__ == '__main__':
     app.run()
