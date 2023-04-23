@@ -82,5 +82,8 @@ def main():
 
                         cv2.imshow("Image", img)
                         cv2.waitKey(1)
+                        ret, buffer = cv2.imencode('.jpg', img)
+                        img = buffer.tobytes()
+                        yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + img + b'\r\n\r\n')
 if __name__ == "__main__":
     main()
