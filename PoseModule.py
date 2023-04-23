@@ -13,8 +13,8 @@ class poseDetector():
         self.mpPose = mp.solutions.pose
         self.pose = self.mpPose.Pose(self.mode)
 
-        self.tipIds = [15, 16, 3, 6, 27] # taking pose detection points's id of left wrist , right wrist ,left eye , right eye
-                                          # and feet respectively
+        self.tipIds = [13, 14, 3, 6, 26] # taking pose detection points's id of left elbow , right elbow ,left eye , right eye
+                                          # and knees respectively
     def findPose(self, img, draw=True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         self.results = self.pose.process(imgRGB)
