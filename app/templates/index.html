@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animate.css')}}">
+</head>
+<body>
+    <div class="container1">
+        <nav>
+            <a href="../" class="title">Yeah Buddy</a>
+            <ul>
+                <li><a href="#" class="nav-links">Home</a></li>
+                <li><a href="#" class="nav-links">About Us</a></li>
+                <li><a href="#" class="nav-links">Diet</a></li>
+                <li><a href="{{ url_for('voice') }}" class="nav-links" id="AiAssist">AI Assistant</a></li>
+            </ul>
+        </nav>
+        <div class="main-con1">
+            <p class="l1">WELCOME TO</p>
+            <p class="l2">YEAH BUDDY</p>
+            <p class="l3">A Connected Fitness Ecosystem</p>
+            <a href="#" id="bmi-but" onclick="calcBmi()">Calculate BMI</a>
+            <div class="bmi" style="visibility: hidden;" id="BMI-calc"> 
+                <form action="" method="get">
+                    <div class="dims"><div><p>Height:</p><br><span id="cm">(in cm)</span></div><input type="number" id="hght" name="hght"></div>
+                    <div class="dims"><div><p>Weight:</p><span id="kg">(in kg)</span></div><input type="number" id="wght" name="wght"></div>
+                    <input type="submit" style="height: 0px; visibility: hidden;">
+                </form>             
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <p class="l1">Fitness Ecosystem</p>
+        <p class="l2">Improve your health consistently and experience change like never before.</p>
+        <div class="utl1-con2  wow bounceInUp" data-wow-duration="1s">
+            <img src="{{ url_for('static', filename='Images/1.jpg')}}" id="img1">
+            <div class="content1">
+                <p class="cl1">Let's Stretch! <br>A simple activity to loosen up your muscles and joints before and after exercising.</p>
+                <a href="/Stretching" class="but-con2">Warm up</a>
+            </div>
+        </div>
+        <div class="utl2-con2  wow bounceInUp">
+            <div class="content1">
+                <p class="cl1">Let's Lift! <br>Strong arms, Strong life: Curl your way to greatness with bicep curls.</p>
+                <a href="/BicepCurls" class="but-con2">Curl</a>
+            </div>
+            <img src="{{ url_for('static', filename='Images/2.png')}}" id="img2">
+        </div>
+        <div class="utl1-con2  wow bounceInUp">
+            <img src="{{ url_for('static', filename='Images/12.png')}}" id="img1-1">
+            <div class="content1">
+                <p class="cl1">Crunch Time! <br> Strengthen your core, tighten your abs, and feel the burn.</p>
+                <a href="/Crunches" class="but-con2">Crunches</a>
+            </div>
+        </div>
+        <div class="utl2-con2  wow bounceInUp">
+            <div class="content1">
+                <p class="cl1">Squat up!<br>The ultimate workout for a beach-ready physique to tone your lower body and build strength.</p>
+                <a href="/Squats" class="but-con2">Squats</a>
+            </div>
+            <img src="{{ url_for('static', filename='Images/13.png')}}" id="img1-2">
+        </div>
+    </div>
+    <div class="container3">
+        <img src="{{ url_for('static', filename='Images/6.jpg')}}" id="img3">
+        <img src="{{ url_for('static', filename='Images/7.jpg')}}" id="img4">
+        <img src="{{ url_for('static', filename='Images/8.jpg')}}" id="img5">
+        <img src="{{ url_for('static', filename='Images/10.jpg')}}" id="img6">
+        <img src="{{ url_for('static', filename='Images/9.jpg')}}" id="img7">
+        <div class="content-con3">
+            <p class="cl2">Diet Flexibility</p>
+            <p class="cl3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis beatae quaerat sapiente rem natus voluptas ipsa ab non qui nulla autem esse, quas quis et, ex atque dolorem assumenda recusandae.</p>
+            <a href="#" class="but-con3">Get your diet plan now!</a>    
+        </div>
+    </div>
+</body>
+<script src="{{ url_for('static', filename='wow.min.js')}}"></script>
+<script> new WOW().init(); </script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
+</html>

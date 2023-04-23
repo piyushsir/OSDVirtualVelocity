@@ -186,3 +186,11 @@ Cbum : 1. Bicep curls
 3. Preacher curls
 4. Seated dumbbell curls
 5. Standing dumbbell curls
+You : hi 
+Cbum : You : 
+Cbum : 
+
+You : 
+Cbum : 
+
+You :

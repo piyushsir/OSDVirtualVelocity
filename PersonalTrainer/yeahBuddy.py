@@ -15,17 +15,21 @@ def MainExe():
             pass
         else:
             data = str(data.lower())
-            if data == "play song" :
-                winsound.PlaySound("Stay.wav",winsound.SND_ASYNC)
-                data2 = Connection()
-                data2 = str(data.lower())
-                if data2 == "stop" or data2 == "stop song" or "top song" :
-                    winsound.PlaySound(None,0)
-                    speak("song has been stopped successfully")
-                 
-            else :
-                data=str(data)
-                Reply = ReplyBrain(data)
-                speak(Reply)
+            if data == "sleep" or data == "leep" or data == "eep" :
+                return
+            else:
+                if data == "play song" :
+                    winsound.PlaySound("Stay.wav",winsound.SND_ASYNC)
+                    data2 = Connection()
+                    data2 = str(data.lower())
+                    if data2 == "stop" or data2 == "stop song" or "top song" :
+                        winsound.PlaySound(None,0)
+                        speak("song has been stopped successfully")
+                    
+                else :
+                    data=str(data)
+                    Reply = ReplyBrain(data)
+                    speak(Reply)
+            
 
 MainExe()
