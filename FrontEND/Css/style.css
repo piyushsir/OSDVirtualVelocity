@@ -188,9 +188,15 @@ nav ul{
     border: 3px solid rgb(157, 1, 1);
     padding: 5px;
     transition: 0.6s;
+    border-radius: 10px;
+    min-width: 5vw;
+    text-align: center;
 }
 .but-con2:hover{
     background-color: rgb(157, 1, 1);
+}
+.but-con2:active{
+    font-size: 15px;
 }
 .utl2-con2{
     width: 55vw;
@@ -204,6 +210,12 @@ nav ul{
     width: 500px;
 }
 #img2{
+    width: 300px;
+}
+#img1-1{
+    width: 350px;
+}
+#img1-2{
     width: 300px;
 }
 .container3{
