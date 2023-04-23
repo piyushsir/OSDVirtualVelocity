@@ -17,8 +17,8 @@ def main():
                         img = detector.findPose(img, False)
                         lmList = detector.FindPosition(img, False)
                         if len(lmList) != 0:
-                            x1, y1 = lmList[27][1:]
-                            x2, y2 = lmList[28][1:]   # axis of both eyes and feet
+                            x1, y1 = lmList[25][1:]
+                            x2, y2 = lmList[26][1:]   # axis of both eyes and feet
                             x3, y3 = lmList[3][1:]
                             x4, y4 = lmList[6][1:]
                             # changing the colours of visited and unvisited motions

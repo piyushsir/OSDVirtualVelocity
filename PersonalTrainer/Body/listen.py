@@ -5,8 +5,8 @@ def Listen():
     r=sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
-        r.pause_threshold=1
-        audio=r.listen(source,0,8)
+        r.pause_threshold=0.5
+        audio=r.listen(source,0,6)
     try:
         print("Recognizing...")
         query=r.recognize_google(audio,language="hi")
@@ -30,4 +30,3 @@ def Connection():
     data=Trans(query)
     return data
 
-print(Connection())
