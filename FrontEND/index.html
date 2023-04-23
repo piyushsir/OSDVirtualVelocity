@@ -23,7 +23,14 @@
             <p class="l1">WELCOME TO</p>
             <p class="l2">YEAH BUDDY</p>
             <p class="l3">Lorem ipsum dolor sit amet.</p>
-            <a href="#" id="bmi-but">Click Here to Calculate BMI</a>
+            <a href="#" id="bmi-but" onclick="calcBmi()">Calculate BMI</a>
+            <div class="bmi" style="visibility: hidden;" id="BMI-calc"> 
+                <form action="" method="get">
+                    <div class="dims"><div><p>Height:</p><br><span id="cm">(in cm)</span></div><input type="number" id="hght" name="hght"></div>
+                    <div class="dims"><div><p>Weight:</p><span id="kg">(in kg)</span></div><input type="number" id="wght" name="wght"></div>
+                    <input type="submit" style="height: 0px; visibility: hidden;">
+                </form>             
+            </div>
         </div>
     </div>
     <div class="container2">
@@ -57,6 +64,13 @@
             </div>
             <img src="{{ url_for('static', filename='Images/2.png')}}" id="img2">
         </div>
+        <div class="utl1-con2  wow bounceInUp">
+            <img src="{{ url_for('static', filename='Images/1.jpg')}}" id="img1">
+            <div class="content1">
+                <p class="cl1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe excepturi mollitia voluptatibus, fugit dolorum.</p>
+                <a href="/Squats" class="but-con2">Click Here</a>
+            </div>
+        </div>
     </div>
     <div class="container3">
         <img src="{{ url_for('static', filename='Images/6.jpg')}}" id="img3">
@@ -72,7 +86,6 @@
     </div>
 </body>
 <script src="{{ url_for('static', filename='wow.min.js')}}"></script>
-<script>
-new WOW().init();
-</script>
+<script> new WOW().init(); </script>
+<script src="{{ url_for('static', filename='script.js')}}"></script>
 </html>
